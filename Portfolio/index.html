@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- =========================
+         Basic Meta
+    ========================== -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Harinisri Ramesh | AI Systems for Healthcare</title>
+
+    <meta name="description"
+        content="Portfolio of Harinisri Ramesh — Biomedical Engineering student building AI systems, embedded intelligence, healthcare technologies and biomedical signal analysis.">
+
+    <meta name="keywords"
+        content="Harinisri Ramesh, Biomedical Engineering, AI Healthcare, Machine Learning, Embedded Systems, Computer Vision, Biomedical Signal Processing">
+
+    <meta name="author" content="Harinisri Ramesh">
+
+    <meta name="theme-color" content="#070E0C">
+
+    <!-- =========================
+         Favicon
+    ========================== -->
+
+    <link rel="icon" href="images/favicon.png">
+
+    <!-- =========================
+         Google Fonts
+    ========================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,450;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,450&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- =========================
+         Main Stylesheet
+    ========================== -->
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body data-theme="dark">
+
+    <!-- ==========================================================
+                            BACKGROUND EFFECTS
+    =========================================================== -->
+
+    <div class="aurora-field">
+
+        <div class="blob blob-1"></div>
+
+        <div class="blob blob-2"></div>
+
+        <div class="blob blob-3"></div>
+
+    </div>
+
+    <div class="dot-grid"></div>
+
+    <div class="noise-overlay"></div>
+
+    <div id="cursorGlow"></div>
+
+    <!-- ==========================================================
+                         WAVEFORM SCROLL INDICATOR
+    =========================================================== -->
+
+    <div id="waveform-progress">
+
+        <canvas id="wfCanvas"></canvas>
+
+    </div>
+
+    <!-- ==========================================================
+                               HEADER
+    =========================================================== -->
+
+    <header>
+
+        <nav class="wrap glass">
+
+            <a href="#top" class="logo">
+
+                <span class="dot"></span>
+
+                Harinisri
+
+            </a>
+
+            <div class="navlinks">
+
+                <a href="#about">About</a>
+
+                <a href="#education">Education</a>
+
+                <a href="#experience">Experience</a>
+
+                <a href="#projects">Projects</a>
+
+                <a href="#skills">Skills</a>
+
+                <a href="#certifications">Certifications</a>
+
+                <a href="#hackathons">Hackathons</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <div class="navtools">
+
+                <button id="themeToggle" aria-label="Toggle Theme">
+
+                    <svg id="iconSun"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2">
+
+                        <circle cx="12" cy="12" r="4" />
+
+                        <path
+                            d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4" />
+
+                    </svg>
+
+                </button>
+
+                <button id="navBurger" aria-label="Open Menu">
+
+                    <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2">
+
+                        <path d="M3 6h18M3 12h18M3 18h18" />
+
+                    </svg>
+
+                </button>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ==========================================================
+                            MOBILE MENU
+    =========================================================== -->
+
+    <div class="mobiledrawer" id="mobileDrawer">
+
+        <button class="close" id="drawerClose">&times;</button>
+
+        <a href="#about">About</a>
+
+        <a href="#education">Education</a>
+
+        <a href="#experience">Experience</a>
+
+        <a href="#projects">Projects</a>
+
+        <a href="#skills">Skills</a>
+
+        <a href="#certifications">Certifications</a>
+
+        <a href="#hackathons">Hackathons</a>
+
+        <a href="#contact">Contact</a>
+
+    </div>
+
+    <!-- ==========================================================
+                            MAIN CONTENT
+    =========================================================== -->
+
+    <main id="top">
+
+        <!-- ======================================================
+                              HERO SECTION
+        ======================================================= -->
+
+        <section class="hero" style="border-top:none;">
+
+            <canvas class="hero-bg" id="heroCanvas"></canvas>
+
+            <div class="wrap">
+
+                <div class="hero-grid">
+
+                    <!-- LEFT CONTENT -->
+
+                    <div>
+
+                        <div class="hero-greeting">
+
+                            <span class="blink"></span>
+
+                            // Hello, I'm
+
+                        </div>
+
+                        <h1
+                            id="heroTitle"
+                            class="hidden-init">
+
+                            Harinisri
+
+                            <br>
+
+                            <em>Ramesh</em>
+
+                        </h1>
+
+                        <div
+                            class="hero-role hidden-init"
+                            id="heroRole">
+
+                            AI Systems
+
+                            <span class="sep">·</span>
+
+                            ML for Healthcare
+
+                            <span class="sep">·</span>
+
+                            Embedded Intelligence
+
+                        </div>
+
+                        <p
+                            class="hero-intro hidden-init"
+                            id="heroIntro">
+
+                            Final-year Biomedical Engineering student at SSN College of Engineering,
+                            building intelligent systems at the intersection of embedded sensing,
+                            machine learning, and AI-driven decision pipelines —
+                            from respiratory diagnostics to behavioural neuroscience.
+
+                        </p>
+
+                        <div
+                            class="cta-row hidden-init"
+                            id="heroCta">
+
+                            <a
+                                class="btn btn-primary magnetic"
+                                href="resume/Harinisri_Ramesh_Resume.pdf"
+                                target="_blank">
+
+                                <span>View Resume</span>
+
+                            </a>
+
+                            <a
+                                class="btn btn-ghost magnetic"
+                                href="resume/Harinisri_Ramesh_Resume.pdf"
+                                download>
+
+                                <span>Download Resume</span>
+
+                            </a>
+
+                            <a
+                                class="btn btn-ghost magnetic"
+                                href="#contact">
+
+                                <span>Contact Me</span>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <!-- RIGHT CONTENT -->
+
+                    <div
+                        class="avatar-card hidden-init"
+                        id="heroAvatar">
+
+                        <canvas id="avatarWave"></canvas>
+
+                        <!-- Replace later with profile image -->
+
+                        <div class="avatar-initials">
+
+                            HR
+
+                        </div>
+
+                        <div class="avatar-tag">
+
+                            Signal in → Insight out.
+
+                            <br>
+
+                            Currently:
+
+                            SIGLEARN + FLYTRACK
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="scroll-cue">
+
+                <span>Scroll</span>
+
+                <span class="line"></span>
+
+            </div>
+
+        </section>
